@@ -1,8 +1,13 @@
-//
-//  RCTCalendarModule.m
-//  AwesomeProject
-//
-//  Created by Mayuri Khandelwal on 12/03/26.
-//
+#import "RCTCalendarModule.h"
+#import <React/RCTLog.h>
 
-#import <Foundation/Foundation.h>
+@implementation RCTCalendarModule
+
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)name location:(NSString *)location)
+{
+  RCTLogInfo(@"Event: %@ at %@", name, location);
+}
+
+@end

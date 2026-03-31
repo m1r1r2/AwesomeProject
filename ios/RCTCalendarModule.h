@@ -1,8 +1,5 @@
-//
-//  RCTCalendarModule.h
-//  AwesomeProject
-//
-//  Created by Mayuri Khandelwal on 12/03/26.
-//
+#import <Foundation/Foundation.h>
+#import <React/RCTBridgeModule.h>
 
-import Foundation
+@interface RCTCalendarModule : NSObject <RCTBridgeModule>
+@end
